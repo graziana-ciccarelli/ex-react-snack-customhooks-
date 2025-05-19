@@ -22,11 +22,11 @@ function useCustomPointer(content) {
   return (
     <div
       style={{
-        position: 'absolute',
+        position: 'fixed',
         left: `${position.x}px`,
         top: `${position.y}px`,
-        pointerEvents: 'none', // Evita che il cursore ostacoli altri elementi interattivi
         transform: 'translate(-50%, -50%)', 
+        cursor: 'none'
       }}
     >
       {content}
