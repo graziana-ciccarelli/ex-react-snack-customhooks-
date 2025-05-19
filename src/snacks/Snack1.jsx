@@ -1,6 +1,7 @@
 import React from "react";
 import useSwitch from "../hooks/useSwitch";
 
+
 function Snack1() {
   const [isOn, toggle] = useSwitch();
 

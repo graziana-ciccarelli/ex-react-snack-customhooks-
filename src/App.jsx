@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Snack1 from "./snacks/Snack1";  
 import Snack2 from "./snacks/Snack2";
+import Snack3 from "./snacks/Snack3";
 
 
 function App() {
@@ -16,12 +17,9 @@ function App() {
       </nav>
       <hr />
       <Routes>
-        {/* Routing per Snack1 e Snack2 */}
         <Route path="/snack-1" element={<Snack1 />} />
         <Route path="/snack-2" element={<Snack2 />} />
-        
-        {/* Questo è il fallback quando nessuna route è corrispondente */}
-        <Route path="*" element={<p>Seleziona uno snack dal menu</p>} />
+        <Route path="/snack-3" element={<Snack3 />} />
       </Routes>
     </div>
   );
