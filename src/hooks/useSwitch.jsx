@@ -1,13 +1,11 @@
-import { useState, useCallback } from "react";
+import { useState } from "react";
 
 function useSwitch(initialValue = false) {
   const [value, setValue] = useState(initialValue);
 
-  const toggle = useCallback(() => {
-    setValue(prev => !prev);
-  }, []);
+  const toggle = () => setValue(prev => !prev);
 
-  return [value, toggle];
+  return [value, toggle]; // Restituiamo il valore e la funzione toggle
 }
 
 export default useSwitch;
